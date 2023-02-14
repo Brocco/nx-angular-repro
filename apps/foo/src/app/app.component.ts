@@ -11,4 +11,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'foo';
+  constructor() {
+    const foo: number | undefined = setTimeout(() => console.log('foo'), 10);
+  }
 }
